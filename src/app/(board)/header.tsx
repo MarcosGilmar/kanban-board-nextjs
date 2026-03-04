@@ -9,9 +9,8 @@ export function Header() {
 
   function handleSearchUpdate(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value, {
-      limitUrlUpdates: debounce(500)
-    }
-    )
+      limitUrlUpdates: event.target.value !== "" ? debounce(500) : undefined,
+    });
   }
 
   return (
