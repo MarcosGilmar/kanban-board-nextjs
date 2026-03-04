@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NuqsAdapter } from "nuqs/adapters/react";
+import { NuqsAdapter } from "nuqs/adapters/next";
 
 export const metadata: Metadata = {
   title: {
     template: "%s | Product Roadmap",
-    default: "Product Roadmap"
+    default: "Product Roadmap",
   },
   description: "Follow the development progress of our entire platform",
 };
