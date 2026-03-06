@@ -1,5 +1,4 @@
 import { UserButton } from "@/components/header/user-button";
-import { SearchInput } from "./search-input";
 
 export function Header() {
   return (
@@ -12,8 +11,6 @@ export function Header() {
       </div>
 
       <div className="flex flex-row gap-2 items-center">
-        <SearchInput />
-
         <UserButton />
       </div>
     </div>
